@@ -30,7 +30,7 @@ namespace CalculadoraVisual
 
         }
 
-        #region //NÚMEROS E IGUAL
+        #region //NÚMEROS, IGUAL Y COMA
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -103,6 +103,18 @@ namespace CalculadoraVisual
             TBAbajo.Text = resultado.ToString();
             resultado = num1;
             primera = true;
+        } 
+        
+        private void buttoncoma_Click(object sender, EventArgs e)
+        {
+            if (!nuevo)
+            {
+               if (coma)
+                {
+                    TBAbajo.Text += buttoncoma.Text;
+                    coma = false;
+                }
+            }
         }
 
 #endregion
@@ -132,8 +144,6 @@ namespace CalculadoraVisual
             String y = buttondiv.Text;
             operacionesbinarias(y);
         }
-
-
 
         #endregion
 
@@ -190,6 +200,7 @@ namespace CalculadoraVisual
                 TBAbajo.Text = "";
                 TBAbajo.Text = x;
                 nuevo = false;
+                coma = true;
             }
             else if (TBAbajo.Text == "0")
             {
@@ -254,11 +265,16 @@ namespace CalculadoraVisual
             {
                 TBAbajo.Text = "0";
             }
+            if ((TBAbajo.Text).IndexOf(',') == -1)
+            {
+                coma = true;
+            }
         }
 
         private void buttonbornum_Click(object sender, EventArgs e)
         {
             TBAbajo.Text = "0";
+            coma = true;
         }
 
         private void buttonC_Click(object sender, EventArgs e)
@@ -269,7 +285,9 @@ namespace CalculadoraVisual
             TBArriba.Text = "";
             resultado = 0;
             memoria = 0;
+            coma = true;
         }
         #endregion
+
     }
 }

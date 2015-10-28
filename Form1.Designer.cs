@@ -51,7 +51,7 @@
             this.buttonig = new System.Windows.Forms.Button();
             this.buttonmas = new System.Windows.Forms.Button();
             this.button0 = new System.Windows.Forms.Button();
-            this.button27 = new System.Windows.Forms.Button();
+            this.buttoncoma = new System.Windows.Forms.Button();
             this.button29 = new System.Windows.Forms.Button();
             this.TBArriba = new System.Windows.Forms.TextBox();
             this.buttonMmenos = new System.Windows.Forms.Button();
@@ -385,20 +385,21 @@
             this.button0.UseVisualStyleBackColor = false;
             this.button0.Click += new System.EventHandler(this.button0_Click);
             // 
-            // button27
+            // buttoncoma
             // 
-            this.button27.BackColor = System.Drawing.Color.Gainsboro;
-            this.button27.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button27.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
-            this.button27.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button27.Font = new System.Drawing.Font("Agency FB", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button27.ForeColor = System.Drawing.Color.Black;
-            this.button27.Location = new System.Drawing.Point(100, 307);
-            this.button27.Name = "button27";
-            this.button27.Size = new System.Drawing.Size(41, 35);
-            this.button27.TabIndex = 31;
-            this.button27.Text = ",";
-            this.button27.UseVisualStyleBackColor = false;
+            this.buttoncoma.BackColor = System.Drawing.Color.Gainsboro;
+            this.buttoncoma.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.buttoncoma.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
+            this.buttoncoma.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttoncoma.Font = new System.Drawing.Font("Agency FB", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttoncoma.ForeColor = System.Drawing.Color.Black;
+            this.buttoncoma.Location = new System.Drawing.Point(100, 307);
+            this.buttoncoma.Name = "buttoncoma";
+            this.buttoncoma.Size = new System.Drawing.Size(41, 35);
+            this.buttoncoma.TabIndex = 31;
+            this.buttoncoma.Text = ",";
+            this.buttoncoma.UseVisualStyleBackColor = false;
+            this.buttoncoma.Click += new System.EventHandler(this.buttoncoma_Click);
             // 
             // button29
             // 
@@ -508,7 +509,7 @@
             this.Controls.Add(this.button29);
             this.Controls.Add(this.buttonmas);
             this.Controls.Add(this.button0);
-            this.Controls.Add(this.button27);
+            this.Controls.Add(this.buttoncoma);
             this.Controls.Add(this.button17);
             this.Controls.Add(this.button18);
             this.Controls.Add(this.buttonig);
@@ -563,7 +564,7 @@
         private System.Windows.Forms.Button buttonig;
         private System.Windows.Forms.Button buttonmas;
         private System.Windows.Forms.Button button0;
-        private System.Windows.Forms.Button button27;
+        private System.Windows.Forms.Button buttoncoma;
         private System.Windows.Forms.Button button29;
         private System.Windows.Forms.TextBox TBArriba;
         private System.Windows.Forms.Button buttonMmenos;
